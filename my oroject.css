@@ -1,0 +1,77 @@
+ /* Common Styles */
+.no-padding {
+    padding: 0px !important;
+}
+.no-margin {
+    margin: 0px !important;
+}
+.text-align {
+    text-align: center;
+}
+
+.color {
+    color:#388da8
+}
+
+/* Header Styles */
+.image-container {
+    height: 400px;
+    object-fit: cover;
+    object-position: center 60%;
+    opacity: 0.7;
+}
+
+.overlay-txt {
+    color: black;
+    font-size: 25px;
+}
+.subject {
+    background-color: var(--surface-color);
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 150px;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;      /* 👈 vertically center */
+    justify-content: center;  /* 👈 horizontally center */
+}
+
+.accordion-button:hover {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: inherit;
+  box-shadow: none;
+}
+
+.backToTop, .scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 2rem;
+    background: #388da8;
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    transition: background 0.2s, box-shadow 0.2s;
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.backToTop.show, .scroll-top.show {
+    display: flex;
+}
+.backToTop:hover, .scroll-top:hover {
+    background: #084298;
+    color: #fff;
+}
+/*------
